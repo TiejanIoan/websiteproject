@@ -1,0 +1,36 @@
+.imgbox {
+    
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    margin: 4px;
+    padding: 6px;
+}
+
+button {
+    width: 100%;
+}
+ 
+#customers {
+    
+    border-collapse: collapse;
+    width: 150px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+
+#customers td:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
