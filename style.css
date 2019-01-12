@@ -6,17 +6,25 @@
     border: 1px solid gray;
     margin: 4px;
     padding: 6px;
+    
 }
 
 button {
     width: 100%;
+    
 }
  
 #customers {
     
     border-collapse: collapse;
     width: 150px;
+    
 }
+#customers button {
+    font-size: 140px;
+    width: 150px; 
+    height: 150px;
+ }
 
 #customers td, #customers th {
     border: 1px solid #ddd;
