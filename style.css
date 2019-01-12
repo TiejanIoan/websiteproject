@@ -14,28 +14,28 @@ button {
     
 }
  
-#customers {
+#table {
     
     border-collapse: collapse;
     width: 150px;
     
 }
-#customers button {
+#table button {
     font-size: 140px;
     width: 150px; 
     height: 150px;
  }
 
-#customers td, #customers th {
+#table td, #table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
 
 
-#customers td:hover {background-color: #ddd;}
+#table td:hover {background-color: #ddd;}
 
-#customers th {
+#table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;

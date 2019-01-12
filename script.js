@@ -15,7 +15,7 @@ function Action(thatid) {
         vic = document.getElementById("victory");
 
     var cont = document.getElementById(thatid);
-    if(cc!=9)
+    if(cc!=9 && cont.innerHTML=="")
     if ( odd==1) {
         cont.innerHTML = "X";
         odd=0;
@@ -26,32 +26,20 @@ function Action(thatid) {
         cc++;
     }
     //horizontal
-    if(btn1.innerHTML != "" && btn1.innerHTML== btn2.innerHTML && btn1.innerHTML == btn3.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
-    if(btn4.innerHTML != "" && btn4.innerHTML== btn5.innerHTML && btn4.innerHTML == btn6.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
-    if(btn7.innerHTML != "" && btn7.innerHTML== btn8.innerHTML && btn7.innerHTML == btn9.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
+    if(btn1.innerHTML != "" && btn1.innerHTML== btn2.innerHTML && btn1.innerHTML == btn3.innerHTML
+        ||btn4.innerHTML != "" && btn4.innerHTML== btn5.innerHTML && btn4.innerHTML == btn6.innerHTML
+        ||btn7.innerHTML != "" && btn7.innerHTML== btn8.innerHTML && btn7.innerHTML == btn9.innerHTML
     //diagonal
-    if(btn1.innerHTML != "" && btn1.innerHTML== btn5.innerHTML && btn1.innerHTML == btn9.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
-    if(btn7.innerHTML != "" && btn7.innerHTML== btn5.innerHTML && btn7.innerHTML == btn3.innerHTML){
-        vic.innerHTML= "VICTORY!";
+        ||btn1.innerHTML != "" && btn1.innerHTML== btn5.innerHTML && btn1.innerHTML == btn9.innerHTML
+        ||btn7.innerHTML != "" && btn7.innerHTML== btn5.innerHTML && btn7.innerHTML == btn3.innerHTML
     //vertical
-    }
-    if(btn1.innerHTML != "" && btn1.innerHTML== btn4.innerHTML && btn1.innerHTML == btn7.innerHTML){
+        ||btn1.innerHTML != "" && btn1.innerHTML== btn4.innerHTML && btn1.innerHTML == btn7.innerHTML
+        ||btn2.innerHTML != "" && btn2.innerHTML== btn5.innerHTML && btn2.innerHTML == btn8.innerHTML
+        || btn3.innerHTML != "" && btn3.innerHTML== btn6.innerHTML && btn3.innerHTML == btn9.innerHTML)
+    {
         vic.innerHTML= "VICTORY!";
     }
-    if(btn2.innerHTML != "" && btn2.innerHTML== btn5.innerHTML && btn2.innerHTML == btn8.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
-    if(btn3.innerHTML != "" && btn3.innerHTML== btn6.innerHTML && btn3.innerHTML == btn9.innerHTML){
-        vic.innerHTML= "VICTORY!";
-    }
+    
     
 }
 
