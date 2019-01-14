@@ -7,22 +7,15 @@
 
 <body>
     
-  <h3 align="center">Tic-Tac-Toe</h3>
+  <h3 id="title" align="center">Tic-Tac-Toe</h3>
+
   <h1 id="victory" align="center"><span id="winner"></span> won!</h1>
-  <ul class="menu">
-    <li><button id="reset" onclick="newGame()">New Game</button></li>
-    <li><button id="startplayer" onclick="startingPlayer()">Starting Player is <span id="XorO">X</span></button></li>
-    <li>
-      <div id="wincount">
-        <h2><span id="X">X</span> wins: <span id="Xwin">0</span></h2>
-        <h2><span id="O">O</span> wins: <span id="Owin">0</span></h2>
-        <h2 id="draw"> Draws: <span id="Draws">0</span></h2>
-      </div>
-    </li>
-  </ul>
-
-  <h1 id="timer"><time>00:00:00</time></h1>
-
+ 
+  <div clas="row">
+    <div class="column">
+      <h1 id="timer"><time>00:00:00</time></h1>
+    </div>
+    <div class="column">
   <table id="table" align="center">
       
       <tr>
@@ -66,7 +59,22 @@
               <button id="9" onclick="Action('9')"  ></button>    
                  </div></td>
           </tr>
-</table>
+      </table>
+    </div>
+    <div class="column">
+    <ul class="menu">
+      <li><button id="reset" onclick="newGame()">New Game</button></li>
+      <li><button id="startplayer" onclick="startingPlayer()">Starting Player is <span id="XorO">X</span></button></li>
+      <li>
+    <div id="wincount">
+      <h2><span id="X">X</span> wins: <span id="Xwin">0</span></h2>
+      <h2><span id="O">O</span> wins: <span id="Owin">0</span></h2>
+      <h2 id="draw"> Draws: <span id="Draws">0</span></h2>
+    </div>
+  </li>
+</ul>
+</div>
+</div>
 
           <script src="script.js"></script>
 

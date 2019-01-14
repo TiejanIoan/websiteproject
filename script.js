@@ -55,6 +55,7 @@ for(var i = 1; i <= 9; i++)
     }, false);
 }
 
+
 function Action(thatid) {
     var cont = document.getElementById(thatid);
     var winner = document.getElementById("winner");
@@ -64,17 +65,18 @@ function Action(thatid) {
         cont.style.color = "#1111DD";
         odd=0;
         cc++;
+        document.getElementsByTagName("body").backgroundColor = "linear-gradient(-45deg, rgb(82, 228, 238), rgb(60, 168, 231), rgb(53, 35, 213), rgb(133, 35, 213))" 
         
         document.getElementById("timer").style.borderColor = "#DD1111";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #DD1111, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, #DD1111, white)";
     } else {
         cont.innerHTML = "O";
         cont.style.color = "#DD1111";
         odd=1;
         cc++;
-        
+        document.getElementsByTagName("body").backgroundColor = "(linear-gradient(45deg, rgb(238, 228, 82), rgb(231, 168, 60), rgb(213, 35, 53), rgb(213, 35, 133))";
         document.getElementById("timer").style.borderColor = "#1111DD";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #1111DD, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, white, #1111DD)";
 
     }
     if(cont.innerHTML != "")
@@ -143,12 +145,12 @@ function newGame() {
     {
         odd = 1;
         document.getElementById("timer").style.borderColor = "#1111DD";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #1111DD, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, white, #1111DD)";
     }
     else {
         odd = 0;
         document.getElementById("timer").style.borderColor = "#DD1111";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #DD1111, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, #DD1111, white)";
 
     }
     vic.innerHTML = '<span id="winner"></span> won!';
@@ -168,14 +170,14 @@ function startingPlayer()
         xo.innerHTML="O";
         xo.style.color="#DD1111";
         document.getElementById("timer").style.borderColor = "#DD1111";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #DD1111, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, white, #DD1111)";
     }
     else {
         odd = 1;
         xo.innerHTML="X";
         xo.style.color="#1111DD";
         document.getElementById("timer").style.borderColor = "#1111DD";
-        document.getElementById('table').style.backgroundImage = "linear-gradient(to top, #1111DD, white)";
+        document.getElementById('table').style.backgroundImage = "linear-gradient(-45deg, #1111DD, white)";
 
     }
     newGame();
@@ -186,52 +188,52 @@ function winHighlight()
     //horizontal
     if(btn1.innerHTML != "" && btn1.innerHTML==btn2.innerHTML && btn1.innerHTML==btn3.innerHTML)
     {
-        btn1.style.backgroundColor = "#11DD11";
-        btn2.style.backgroundColor = "#11DD11";
-        btn3.style.backgroundColor = "#11DD11";
+        btn1.style.backgroundColor = "#CECECE";
+        btn2.style.backgroundColor = "#CECECE";
+        btn3.style.backgroundColor = "#CECECE";
     }
      if(btn4.innerHTML != "" && btn4.innerHTML==btn5.innerHTML && btn4.innerHTML==btn6.innerHTML)
     {
-        btn4.style.backgroundColor = "#11DD11";
-        btn5.style.backgroundColor = "#11DD11";
-        btn6.style.backgroundColor = "#11DD11";
+        btn4.style.backgroundColor = "#CECECE";
+        btn5.style.backgroundColor = "#CECECE";
+        btn6.style.backgroundColor = "#CECECE";
     }
      if(btn7.innerHTML != "" && btn7.innerHTML==btn8.innerHTML && btn7.innerHTML==btn9.innerHTML)
     {
-        btn7.style.backgroundColor = "#11DD11";
-        btn8.style.backgroundColor = "#11DD11";
-        btn9.style.backgroundColor = "#11DD11";
+        btn7.style.backgroundColor = "#CECECE";
+        btn8.style.backgroundColor = "#CECECE";
+        btn9.style.backgroundColor = "#CECECE";
     }
     //vertical
      if(btn1.innerHTML != "" && btn1.innerHTML==btn4.innerHTML && btn1.innerHTML==btn7.innerHTML)
     {
-        btn1.style.backgroundColor = "#11DD11";
-        btn4.style.backgroundColor = "#11DD11";
-        btn7.style.backgroundColor = "#11DD11";
+        btn1.style.backgroundColor = "#CECECE";
+        btn4.style.backgroundColor = "#CECECE";
+        btn7.style.backgroundColor = "#CECECE";
     }
      if(btn2.innerHTML != "" && btn2.innerHTML==btn5.innerHTML && btn2.innerHTML==btn8.innerHTML)
     {
-        btn2.style.backgroundColor = "#11DD11";
-        btn5.style.backgroundColor = "#11DD11";
-        btn8.style.backgroundColor = "#11DD11";
+        btn2.style.backgroundColor = "#CECECE";
+        btn5.style.backgroundColor = "#CECECE";
+        btn8.style.backgroundColor = "#CECECE";
     }
      if(btn3.innerHTML != "" && btn3.innerHTML==btn6.innerHTML && btn3.innerHTML==btn9.innerHTML)
     {
-        btn3.style.backgroundColor = "#11DD11";
-        btn6.style.backgroundColor = "#11DD11";
-        btn9.style.backgroundColor = "#11DD11";
+        btn3.style.backgroundColor = "#CECECE";
+        btn6.style.backgroundColor = "#CECECE";
+        btn9.style.backgroundColor = "#CECECE";
     }
     //diagonal
      if(btn1.innerHTML != "" && btn1.innerHTML==btn5.innerHTML && btn1.innerHTML==btn9.innerHTML)
     {
-        btn1.style.backgroundColor = "#11DD11";
-        btn5.style.backgroundColor = "#11DD11";
-        btn9.style.backgroundColor = "#11DD11";
+        btn1.style.backgroundColor = "#CECECE";
+        btn5.style.backgroundColor = "#CECECE";
+        btn9.style.backgroundColor = "#CECECE";
     }
      if(btn3.innerHTML != "" && btn3.innerHTML==btn5.innerHTML && btn3.innerHTML==btn7.innerHTML)
     {
-        btn3.style.backgroundColor = "#11DD11";
-        btn5.style.backgroundColor = "#11DD11";
-        btn7.style.backgroundColor = "#11DD11";
+        btn3.style.backgroundColor = "#CECECE";
+        btn5.style.backgroundColor = "#CECECE";
+        btn7.style.backgroundColor = "#CECECE";
     }    
 }
