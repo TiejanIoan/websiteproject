@@ -1,65 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <title>The best Tic-Tac-Toe you've ever seen</title>
         <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
+  <div class="header">
+    <h1>Tic-Tac-Toe</h1>
+    <h2 id="victory" ><span id="winner"></span> won!</h2>
+  </div>
+  
+  <div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a id="timer" ><time>00:00:00</time></a>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <ul class="menu">
+        <li><button id="reset" onclick="newGame()">New Game</button></li>
+        <li><button id="startplayer" onclick="startingPlayer()">Starting Player is <span id="XorO">X</span></button></li>
+        <li>
+          <div id="wincount">
+            <h2><span id="X">X</span> wins: <span id="Xwin">0</span></h2>
+            <h2><span id="O">O</span> wins: <span id="Owin">0</span></h2>
+            <h2 id="draw"> Draws: <span id="Draws">0</span></h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="column">
+      <table id="table">
       
-      <p>Click the light bulb to turn on/off the light.</p>
-      
-      <script>
-      
-      </script>
-<h3>Tic-Tac-Toe</h3>
-<h1 id="victory"></h1>
-<table id="table" >
-      
-      <tr>
-            <td><div class="imgbox">
-              
-              <button id="1" onclick="Action('1')"  ></button>    
-                </div></td>
-              <td><div class="imgbox">
-              
-              <button id="2" onclick="Action('2')"  ></button>    
-                 </div></td>
-              <td><div class="imgbox">
-              
-              <button id="3" onclick="Action('3')"  ></button>    
-                 </div></td>
-        </tr>
         <tr>
-            <td><div class="imgbox">
-              
-              <button id="4" onclick="Action('4')"  ></button>    
-                </div></td>
               <td><div class="imgbox">
-              
-              <button id="5" onclick="Action('5')"  ></button>    
-                 </div></td>
-              <td><div class="imgbox">
-              
-              <button id="6" onclick="Action('6')"  ></button>    
-                 </div></td>
+                
+                <button id="1" onclick="Action('1')"  ></button>    
+                  </div></td>
+                <td><div class="imgbox">
+                
+                <button id="2" onclick="Action('2')"  ></button>    
+                   </div></td>
+                <td><div class="imgbox">              
+                <button id="3" onclick="Action('3')"  ></button>    
+                   </div></td>
           </tr>
           <tr>
-            <td><div class="imgbox">
-              
-              <button id="7" onclick="Action('7')"  ></button>    
-                </div></td>
               <td><div class="imgbox">
-              
-              <button id="8" onclick="Action('8')"  ></button>    
-                 </div></td>
+                
+                <button id="4" onclick="Action('4')"  ></button>    
+                  </div></td>
+                <td><div class="imgbox">
+                
+                <button id="5" onclick="Action('5')"  ></button>    
+                   </div></td>
+                <td><div class="imgbox">
+                
+                <button id="6" onclick="Action('6')"  ></button>    
+                   </div></td>
+            </tr>
+            <tr>
               <td><div class="imgbox">
-              
-              <button id="9" onclick="Action('9')"  ></button>    
-                 </div></td>
-          </tr>
+                
+                <button id="7" onclick="Action('7')"  ></button>    
+                  </div></td>
+                <td><div class="imgbox">
+                
+                <button id="8" onclick="Action('8')"  ></button>    
+                   </div></td>
+                <td><div class="imgbox">
+                
+                <button id="9" onclick="Action('9')"  ></button>    
+                   </div></td>
+            </tr>
+  </table>
+</div>
 
-<button onclick="resetElement()" style="width: 100px" >Reset All</button>
+  </div>
 
-<script src="script.js"></script>
+
+  
+  
+
+  
+
+  
+
+          <script src="script.js"></script>
 
 </body>
 </html>

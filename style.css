@@ -1,44 +1,210 @@
-.imgbox {
-    
-    text-align: center;
+
+
+.imgbox {    
     width: 150px;
     height: 150px;
     border: 1px solid gray;
-    margin: 4px;
-    padding: 6px;
+    margin: 10px;
+    padding: 10px;
+    color: black;    
+}
+
+h1,h2,h3,h4,h5,h6,button {
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#X, #O {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#timer {
+    float:right;
+    margin-right: 50px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+
+#victory {
+    visibility: hidden;
+    vertical-align: middle;
+    height: 30px;
+}
+
+#winner {
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+.menu {
+    top: 120px;
+    right: 10px; 
+}
+
+.menu button {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#XorO {
+    color: #1111DD;
+    font-size: 40px;
+    vertical-align: middle;
     
 }
 
-button {
-    width: 100%;
+#X {
+    color: #1111DD;
+    font-size: 40px;
     
 }
- 
-#table {
+
+#O {
+    color: #DD1111;
+    font-size: 40px;
     
+}
+
+#draw {
+    padding-top: 10px; 
+    
+}
+
+#table {
+    background-image: linear-gradient(-45deg, #1111DD, #DD7777);
     border-collapse: collapse;
     width: 150px;
-    
+    user-select: none;
 }
+
 #table button {
     font-size: 140px;
     width: 150px; 
     height: 150px;
+    user-select: none;
  }
 
 #table td, #table th {
     border: 1px solid #ddd;
     padding: 8px;
+    user-select: none;
+}
+
+#table td:hover {
+    background-color: #ddd;
+}
+
+#table button {
+    background-color: #DDD;
+}
+
+body {
+    margin: 0;
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(82, 228, 238), rgb(60, 168, 231), rgb(53, 35, 213), rgb(133, 35, 213));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 
 
-#table td:hover {background-color: #ddd;}
-
-#table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
+  
+  
+  /* Style the header */
+  .header {
+    background-color: #cfcfcf;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:1000px) {
+    .column {
+      width: 100%;
+    }
+  }
