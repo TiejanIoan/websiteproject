@@ -1,3 +1,6 @@
+
+
+
 var time = document.getElementById('timer');
     var t, milliseconds = 0, seconds = 0, minutes = 0;
     function add() {
@@ -186,52 +189,52 @@ function winHighlight()
     //horizontal
     if(btn1.innerHTML != "" && btn1.innerHTML==btn2.innerHTML && btn1.innerHTML==btn3.innerHTML)
     {
-        btn1.style.backgroundColor = "#cecece";
-        btn2.style.backgroundColor = "#cecece";
-        btn3.style.backgroundColor = "#cecece";
+        btn1.style.backgroundColor = "#1abc0f";
+        btn2.style.backgroundColor = "#1abc0f";
+        btn3.style.backgroundColor = "#1abc0f";
     }
      if(btn4.innerHTML != "" && btn4.innerHTML==btn5.innerHTML && btn4.innerHTML==btn6.innerHTML)
     {
-        btn4.style.backgroundColor = "#cecece";
-        btn5.style.backgroundColor = "#cecece";
-        btn6.style.backgroundColor = "#cecece";
+        btn4.style.backgroundColor = "#1abc0f";
+        btn5.style.backgroundColor = "#1abc0f";
+        btn6.style.backgroundColor = "#1abc0f";
     }
      if(btn7.innerHTML != "" && btn7.innerHTML==btn8.innerHTML && btn7.innerHTML==btn9.innerHTML)
     {
-        btn7.style.backgroundColor = "#cecece";
-        btn8.style.backgroundColor = "#cecece";
-        btn9.style.backgroundColor = "#cecece";
+        btn7.style.backgroundColor = "#1abc0f";
+        btn8.style.backgroundColor = "#1abc0f";
+        btn9.style.backgroundColor = "#1abc0f";
     }
     //vertical
      if(btn1.innerHTML != "" && btn1.innerHTML==btn4.innerHTML && btn1.innerHTML==btn7.innerHTML)
     {
-        btn1.style.backgroundColor = "#cecece";
-        btn4.style.backgroundColor = "#cecece";
-        btn7.style.backgroundColor = "#cecece";
+        btn1.style.backgroundColor = "#1abc0f";
+        btn4.style.backgroundColor = "#1abc0f";
+        btn7.style.backgroundColor = "#1abc0f";
     }
      if(btn2.innerHTML != "" && btn2.innerHTML==btn5.innerHTML && btn2.innerHTML==btn8.innerHTML)
     {
-        btn2.style.backgroundColor = "#cecece";
-        btn5.style.backgroundColor = "#cecece";
-        btn8.style.backgroundColor = "#cecece";
+        btn2.style.backgroundColor = "#1abc0f";
+        btn5.style.backgroundColor = "#1abc0f";
+        btn8.style.backgroundColor = "#1abc0f";
     }
      if(btn3.innerHTML != "" && btn3.innerHTML==btn6.innerHTML && btn3.innerHTML==btn9.innerHTML)
     {
-        btn3.style.backgroundColor = "#cecece";
-        btn6.style.backgroundColor = "#cecece";
-        btn9.style.backgroundColor = "#cecece";
+        btn3.style.backgroundColor = "#1abc0f";
+        btn6.style.backgroundColor = "#1abc0f";
+        btn9.style.backgroundColor = "#1abc0f";
     }
     //diagonal
      if(btn1.innerHTML != "" && btn1.innerHTML==btn5.innerHTML && btn1.innerHTML==btn9.innerHTML)
     {
-        btn1.style.backgroundColor = "#cecece";
-        btn5.style.backgroundColor = "#cecece";
-        btn9.style.backgroundColor = "#cecece";
+        btn1.style.backgroundColor = "#1abc0f";
+        btn5.style.backgroundColor = "#1abc0f";
+        btn9.style.backgroundColor = "#1abc0f";
     }
      if(btn3.innerHTML != "" && btn3.innerHTML==btn5.innerHTML && btn3.innerHTML==btn7.innerHTML)
     {
-        btn3.style.backgroundColor = "#cecece";
-        btn5.style.backgroundColor = "#cecece";
-        btn7.style.backgroundColor = "#cecece";
+        btn3.style.backgroundColor = "#1abc0f";
+        btn5.style.backgroundColor = "#1abc0f";
+        btn7.style.backgroundColor = "#1abc0f";
     }    
 }
